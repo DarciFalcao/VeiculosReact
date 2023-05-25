@@ -1,3 +1,9 @@
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
 :root {
   --white: #fff;
   --gray-100: #e1e1e6;
@@ -16,7 +22,7 @@
   
   :focus {
   outline: transparent;
-  box-shadow: 0 0 0 2px var(--green-500);
+  box-shadow: 0 0 0 1px var(--green-500);
   }
   
   * {
@@ -26,13 +32,17 @@
   }
   
   body {
-  background: var(--gray-900);
-  color: var(--gray-300);
+  background: #F0F0F5 url('./assets/logo.svg') no-repeat 70% top;
+  color: var(--gray-800);
   -webkit-font-smoothing: antialiased;
   }
   
   body, input, textarea, button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
+  }
+
+  button {
+    cursor: pointer;
   }

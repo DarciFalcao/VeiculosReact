@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './componentes/App.jsx'
-import Veiculo from './componentes/Veiculo.jsx'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
-
+import {Route, Routes} from 'react-router-dom'
+import Repository from './componentes/Repository.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Veiculo />
+    <Routes>
+    <Route path='/'  element={<App/>}/>
+    <Route path='/repository'  element={<Repository/>}/>
+    </Routes>
   </React.StrictMode>,
 )
